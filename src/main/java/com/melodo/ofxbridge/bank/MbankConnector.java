@@ -32,7 +32,7 @@ public class MbankConnector extends AbstractConnector {
             HtmlForm historyForm = historyPage.getForms().get(0);
             historyForm.getInputByName("export_oper_history_check").setChecked(true);
             historyPage.getForms().get(0).getSelectByName("export_oper_history_format").setSelectedAttribute("CSV",true);
-            historyForm.getInputByName("daterange_from_year").setValueAttribute("2009");
+            //historyForm.getInputByName("daterange_from_year").setValueAttribute("2009");
             HtmlButton historyFormSubmit = historyForm.getElementById("Submit");
             TextPage resultPage = historyFormSubmit.click();
             return resultPage.getWebResponse().getContentAsString("windows-1250");
