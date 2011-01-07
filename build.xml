@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="webshop" >
+
+    <target name="synchronize" description="synchronize webapp">
+        <copy todir="target/webshop">
+            <fileset dir="src/main/webapp"/>
+        </copy>
+        <copy todir="target/webshop/WEB-INF/classes">
+            <fileset file="src/main/resources/test_pl.properties"/>
+        </copy>
+    </target>
+
+   
+
+    <target name="touch-webapp">
+        <touch file="src/main/webapp/WEB-INF/web.xml"/>
+    </target>
+
+    <target name="synchronize-reload" description="synchronize and reload" depends="touch-webapp,synchronize">
+
+    </target>
+
+    
+
+</project>

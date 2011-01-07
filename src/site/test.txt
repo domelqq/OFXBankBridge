@@ -1,0 +1,3 @@
+http://localhost:8082?type=MBANK&name=eKONTO__**3303&customer=00000000&password=8888888&account=eKONTO__28__1140__2004__0000__3502__2730__3303
+http://localhost:8082?type=MBANK&name=mBiznes__**6238&customer=00000000&password=8888888&account=mBIZNES__Konto__54__1140__2004__0000__3602__5278__6238
+http://localhost:8082?type=MBANK_VISA_HIST&name=Visa__**3628&customer=0000000&password=8888888&account=VISA__CREDIT__G_plusJ__4222__****__****__3628
